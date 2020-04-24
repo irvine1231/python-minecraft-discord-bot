@@ -24,7 +24,7 @@ class MyClient(discord.Client):
 
         if message.content.startswith('!list'):
             try:
-                with Client(os.getenv("MINECRAFT_HOST"), int(os.getenv("MINECRAFT_PORT"))) as client:
+                with Client(os.getenv("MINECRAFT_HOST"), int(os.getenv("MINECRAFT_PORT"), timeout=1.5)) as client:
                     full_stats = client.full_stats
                     player_list_message = "Player list: \n"
                     for player_name in full_stats.players:

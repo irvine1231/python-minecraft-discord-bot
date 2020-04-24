@@ -32,8 +32,7 @@ class MyClient(discord.Client):
 
                     await message.channel.send(player_list_message)
 
-            except e:
-                print(e)
+            except:
                 await message.channel.send('Server is offline!')
 
 

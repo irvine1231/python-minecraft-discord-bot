@@ -16,6 +16,6 @@ pycodestyle==2.5.0
 pylint==2.4.4
 python-dotenv==0.13.0
 six==1.14.0
-websockets==8.1
+websockets==9.1
 wrapt==1.11.2
 yarl==1.4.2
